@@ -1,0 +1,23 @@
+<div class="container">
+  <p id="notice"><%= notice %></p>
+
+  <p>
+    <strong>Name:</strong>
+    <%= @cocktail.name %>
+  </p>
+
+  <%= link_to "Add an ingredient", new_cocktail_dose_path(@cocktail) %>
+
+  <hr>
+
+  <%= link_to 'Back', cocktails_path %>
+
+</div>
+
+
+
+
+
+
+
+

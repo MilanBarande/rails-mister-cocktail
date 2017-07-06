@@ -1,0 +1,11 @@
+<%= simple_form_for(@cocktail) do |f| %>
+  <h2>New Cocktail:</h2>
+  <%= f.error_notification %>
+
+  <%= f.input :name %>
+
+
+  <%= f.button :submit %>
+<% end %>
+<div class="container">  <%= link_to 'Back', cocktails_path %>
+</div>
