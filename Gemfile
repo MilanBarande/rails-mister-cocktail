@@ -61,4 +61,6 @@ gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'autoprefixer-rails'
 
+gem 'figaro'
+
 ruby '2.3.3'

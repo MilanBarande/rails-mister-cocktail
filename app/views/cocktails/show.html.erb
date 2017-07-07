@@ -5,6 +5,12 @@
     <strong>Name:</strong>
     <%= @cocktail.name %>
   </p>
+  <ul class="list-unstyled">
+    <li><strong>Ingredients:</strong></li>
+    <% @cocktail.doses.each do |dose| %>
+    <li><%= dose.ingredient.name %>: <%= dose.description %></li>
+    <% end %>
+  </ul>
 
   <%= link_to "Add an ingredient", new_cocktail_dose_path(@cocktail) %>
 
